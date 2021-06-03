@@ -1,0 +1,23 @@
+Bigquery:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account-json
+      project: oef-stage
+      dataset: TestRecoursePlanner
+      threads: 2
+      timeout_seconds: 300
+      priority: interactive
+
+     keyfile_sjon:
+        type: "service_account"
+        project_id: "oef-stage"
+        private_key_id: "58d8b62f3603679530f14a3eab8a1483d4c1af54"
+        private_key: "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQC5GPp9aEfI+8rI\nlNwT88mtqKCNcsTEYgXvxIJ802WTISmAputQcrQVg2Lla76wZlXwXamTZMBeEX/d\nGKTzQqwErdru7svTXJobk9DKOB5HGzsvudAMJNk1uHPIesw8vL+iiRDg7K83wd6U\nNrpxdK9VA3U6bz3TLloV7TfsVlxeKJjZ/GfYlzDAEdb2W7nE0JqDdgN9KtkNNjbn\n5ZUIl4napYNuQCk/88sY1KCLyCc6UQBHnL18M1o+A/zUlTPY59HAonvdmb44GMPK\nt7wE1Jiz5zmS5JYhcAZvfcEkFfyxYnP1UaktybwQqFbtAiZSAayMgACHzH6qSWet\neadCyF4bAgMBAAECggEAUi2JVLE+IbjMhLY2aXNUiJGzymj4fDoK6bMkvde7IpHY\nE8LH+Z0bX+vHthTaggXFROTIm2RhVcJOMvK0lT32ElO/vlHt04aq8vBzA7zbkHVC\nF0PXXvTjLMsaOJlwYMzqBfb1s+7RMh+UOth7eVC1YTiaTNnDqKVNIKwDpp2G/9Qi\n3GXevTuVx18oydJS8oBvEJH5yLDwU0mxCVNDkmvL/ZpKipDCuq7NyJIflG9KQk5e\nSr1h/9Zla/TE7qhfqxdrjCy5HVWX9J5tb7PD5fbGj0cla8nEpVtqpqJ5nQR8s0Bj\nq7iV33AT/GV72sD5HTpehGZMIhCLncsBS/0JxAy3CQKBgQDzcU+X6Q0RNorAx2Nn\nGmncCYhIHcaPl8Rm5MF3jmGczdBL0HPoD+RKKI2+PdeLrrmiiG9lamw2i/TFmi3/\nIEoMuZdXZW12kR2BWCmzGmyf3pyQCV4BKJan6vRmmVZfakbPuWrLcDQ3k0r+RpmW\nQdB2idz+G/YtsE1b/zugLEtqiQKBgQDCpTbUgonxVnH7hTbmBXBBIrKMBwdDJNxY\nEbVbyQ7POYjcH8FKExQhwnOjwbstnAwh0O9aem4ny/7DjZIkqh/r+y9313lzozZi\nOvBeRTrEHh0KkMc7g5/Qo+AAa8TNrxgquVZJgaaA2zHInX9Nmnv0cWQ5dLRM6uGV\ne/T+veuKgwKBgECMXd9Youdaf+XnuFqhLUpzmJgOlRSD2Ea0BvxNW2J5S+6eQe1Z\nMV3cbODxgtJ9rKkE5gyM8E5yQ5+VZvbLt/axywgYU7LpfVpLZxsfOYgWPYsPgMZr\n3a5+ZPlDVRyNkGMJteBlSuMlge/0BktJ/h1AJsGV5mts4MYw4b1xoTmJAoGAexeK\nLigDXijh2kLrbdnAnKB5s036jL6xzcwdGddzUx86aqJ2VQbts0/KW6P3YCeQEI6V\n320PXoGGMlrEMgWYPF7ULQCKINP1X3eQbL1xJXc5vGXEaOGbXpFT5lBA3CY/rT0Z\n0VB5YIG94PWg/Q2WGAbhb+ha4U2krSj/zV2DqEsCgYBfsw2O54hWA2iNsUs29x3h\nHoBRwANMrcay8rnu6zZeQtP2fmuNvHy4gGjQzSqVEMacyKdPk8w0Duhm4c4zPIDZ\noXkHWSISKvmHWa2l8ESJcdta0SLsDyCHlS3ILbUc2pe2+/ygyrqlk7W9RSiFaXMl\nKhXmboO7SdV5ZIt2L0jDoQ==\n-----END PRIVATE KEY-----\n"
+        client_email: "dbt-222@oef-stage.iam.gserviceaccount.com"
+        client_id: "113288976275918515776"
+        auth_uri: "https://accounts.google.com/o/oauth2/auth"
+        token_uri: "https://oauth2.googleapis.com/token"
+        auth_provider_x509_cert_url: "https://www.googleapis.com/oauth2/v1/certs"
+        client_x509_cert_url: "https://www.googleapis.com/robot/v1/metadata/x509/dbt-222%40oef-stage.iam.gserviceaccount.com"
